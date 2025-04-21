@@ -1,5 +1,5 @@
 let extract_classes_from_string content =
-  let regex = Str.regexp "class=\\\"\\([^\\\"]+\\)\\\"" in
+  let regex = Str.regexp "class=\"\([^\"]+\)\"" in
   let rec aux pos acc =
     try
       let _ = Str.search_forward regex content pos in
@@ -8,7 +8,6 @@ let extract_classes_from_string content =
     with Not_found -> acc
   in
   aux 0 [] |> List.sort_uniq String.compare
-
 
 let extract_classes_from_files files =
   files
