@@ -1,0 +1,4 @@
+(executable
+ (name ctrlcss)
+ (modules ctrlcss)
+ (libraries ctrlcss_lib str))
