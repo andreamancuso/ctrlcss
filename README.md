@@ -49,15 +49,16 @@ CtrlCSS emits one CSS rule per line, based on matched classes.
 
 ## Supported Architectures
 
-OS | Arch | Notes
-Linux | amd64 | x86_64, standard builds
-Linux | arm64 | ARMv8 / Apple Silicon
-Linux | arm | ARMv7 / Raspberry Pi
-Linux | riscv64 | Milk-V Mars, VisionFive, etc.
-macOS | amd64 | Intel Macs
-macOS | arm64 | M1/M2/M3 Macs
-Windows | amd64 | 64-bit Windows
-Windows | arm64 | Surface Pro (ARM)
+| OS | Arch | Notes |
+|-------|-------|-------------------------|
+| Linux | amd64 | x86_64, standard builds |
+| Linux | arm64 | ARMv8 / Apple Silicon |
+| Linux | arm | ARMv7 / Raspberry Pi |
+| Linux | riscv64 | Milk-V Mars, VisionFive, etc. |
+| macOS | amd64 | Intel Macs |
+| macOS | arm64 | M1/M2/M3 Macs |
+| Windows | amd64 | 64-bit Windows |
+| Windows | arm64 | Surface Pro (ARM) |
 
 ## License
 
