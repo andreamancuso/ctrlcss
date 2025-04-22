@@ -1,9 +1,26 @@
+project_name: ctrlcss
+
 builds:
   - id: ctrlcss
-    main: ./cmd/ctrlcss
+    main: ./cmd/ctrlcss/main.go
     goos:
       - linux
     goarch:
       - amd64
       - arm64
       - riscv64
+    ldflags:
+      - -s -w
+    env:
+      - CGO_ENABLED=0
+
+archives:
+  - format: tar.gz
+    files:
+      - LICENSE
+      - README.md
+
+release:
+  github:
+    owner: andreamancuso
+    name: ctrlcss
