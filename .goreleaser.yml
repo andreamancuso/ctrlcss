@@ -1,0 +1,9 @@
+builds:
+  - id: ctrlcss
+    main: ./cmd/ctrlcss
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+      - riscv64
