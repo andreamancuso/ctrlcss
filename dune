@@ -1,5 +1,0 @@
-(env
- (dev
-  (flags (:standard -w -27-32-39))))
-
-; declare subdirs

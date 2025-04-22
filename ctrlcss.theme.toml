@@ -1,0 +1,13 @@
+[spacing]
+0 = "0"
+1 = "0.25rem"
+2 = "0.5rem"
+4 = "1rem"
+8 = "2rem"
+12 = "3rem"
+
+[colors]
+white = "#ffffff"
+black = "#000000"
+blue-500 = "#3b82f6"
+gray-800 = "#1f2937"
