@@ -121,6 +121,15 @@ var placeMap = map[string]string{
 	"place-content-evenly":  "place-content: space-evenly;",
 }
 
+var cursorMap = map[string]string{
+	"cursor-pointer": "pointer",
+	"cursor-default": "default",
+	"cursor-wait":    "wait",
+	"cursor-text":    "text",
+	"cursor-move":    "move",
+	"cursor-not-allowed": "not-allowed",
+}
+
 func layoutRule(class string, spacing map[string]string) string {
 	if decl, ok := displayClasses[class]; ok {
 		return fmt.Sprintf(".%s { %s }", class, decl)
@@ -324,6 +333,10 @@ func layoutRule(class string, spacing map[string]string) string {
 		default:
 			return fmt.Sprintf(".%s { order: %s; }", class, key)
 		}
+	}
+
+	if val, ok := cursorMap[class]; ok {
+		return fmt.Sprintf(".%s { cursor: %s; }", class, val)
 	}
 
 	return ""

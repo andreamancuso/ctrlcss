@@ -11,3 +11,9 @@ white = "#ffffff"
 black = "#000000"
 blue-500 = "#3b82f6"
 gray-800 = "#1f2937"
+
+[safelist]
+classes = [
+  "cursor-pointer",
+  "hover:cursor-pointer"
+]

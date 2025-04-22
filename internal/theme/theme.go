@@ -9,6 +9,9 @@ import (
 type Theme struct {
 	Spacing map[string]string
 	Colors  map[string]string
+	Safelist struct {
+		Classes []string
+	}
 }
 
 func Load(path string) Theme {
