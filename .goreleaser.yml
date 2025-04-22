@@ -5,10 +5,18 @@ builds:
     main: ./cmd/ctrlcss/main.go
     goos:
       - linux
+      - darwin
+      - windows
+      - freebsd
+      - openbsd
     goarch:
       - amd64
       - arm64
+      - arm
       - riscv64
+    goarm:
+      - 6
+      - 7
     ldflags:
       - -s -w
     env:
