@@ -16,5 +16,8 @@ func (r RuleSet) Lookup(class string) string {
 	if css := colorRule(class, r.Colors); css != "" {
 		return css
 	}
+	if css := layoutRule(class, r.Spacing); css != "" {
+		return css
+	}
 	return ""
 }

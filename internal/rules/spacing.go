@@ -54,7 +54,7 @@ func multiProp(class, prefix string, props []string, spacing map[string]string) 
 		for _, p := range props {
 			decl += fmt.Sprintf("%s: %s; ", p, val)
 		}
-		return fmt.Sprintf(".%s { %s}", class, strings.TrimSpace(decl))
+		return fmt.Sprintf(".%s { %s }", class, strings.TrimSpace(decl))
 	}
 	return ""
 }
